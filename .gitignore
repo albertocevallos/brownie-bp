@@ -1,0 +1,25 @@
+.DS_Store
+artifacts/
+build/
+node_modules/
+.env
+scripts/__pycache__
+tests/__pycache__
+
+### Node ###
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+# IDE Configs
+.vscode/*
+.idea
+
+
+/venv
+/build
