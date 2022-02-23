@@ -1,13 +1,10 @@
-# Brownie configuration file
-# https://eth-brownie.readthedocs.io/en/stable/config.html
-# required external contracts
+# exclude SafeMath when calculating test coverage
+# https://eth-brownie.readthedocs.io/en/v1.10.3/config.html#exclude_paths
+reports:
+  exclude_contracts:
+    - SafeMath
 dependencies:
   - OpenZeppelin/openzeppelin-contracts@4.5.0
-pytest:
-  # these settings replace the defaults when running pytest
-  default_contract_owner: true
-  reverting_tx_gas_limit: 6721975
-  revert_traceback: true
 compiler:
   solc:
     version: 0.8.12
@@ -18,13 +15,6 @@ compiler:
       - "@openzeppelin/contracts/utils=OpenZeppelin/openzeppelin-contracts@4.5.0/contracts/utils"
 # automatically fetch contract sources from Etherscan
 autofetch_sources: True
-# dotenv: .env
-# networks:
-#   live:
-#     gas_limit: max
-#     gas_buffer: 1.1
-#     gas_price: 30000000000
-#     max_fee: null
-#     priority_fee: null
-#     reverting_tx_gas_limit: false
-#     default_contract_owner: false
+dotenv: .env
+networks:
+  default: avalanche-main-fork

@@ -2,9 +2,13 @@
 artifacts/
 build/
 node_modules/
-.env
 scripts/__pycache__
 tests/__pycache__
+/venv
+/build
+
+# .env
+
 
 ### Node ###
 
@@ -19,7 +23,3 @@ yarn.lock
 # IDE Configs
 .vscode/*
 .idea
-
-
-/venv
-/build
