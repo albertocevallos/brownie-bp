@@ -15,16 +15,16 @@ compiler:
       enabled: true
       runs: 1
     remappings:
-      - "@openzeppelin/contracts=OpenZeppelin/openzeppelin-contracts@4.5.0/contracts"
+      - "@openzeppelin/contracts/utils=OpenZeppelin/openzeppelin-contracts@4.5.0/contracts/utils"
 # automatically fetch contract sources from Etherscan
 autofetch_sources: True
-dotenv: .env
+# dotenv: .env
 # networks:
 #   live:
-# gas_limit: max
-# gas_buffer: 1.1
-# gas_price: 30000000000
-# max_fee: null
-# priority_fee: null
-# reverting_tx_gas_limit: false
-# default_contract_owner: false
+#     gas_limit: max
+#     gas_buffer: 1.1
+#     gas_price: 30000000000
+#     max_fee: null
+#     priority_fee: null
+#     reverting_tx_gas_limit: false
+#     default_contract_owner: false
